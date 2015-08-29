@@ -11,9 +11,6 @@ CHIP Eq {
 
     PARTS:
     // Put your code here:
-    Not(in=a,out=na);
-    Not(in=b,out=nb);
-    And(a=a,b=b,out=out1);
-    And(a=na,b=nb,out=out2);
-    Or(a=out1,b=out2,out=out);
+    Xor(a=a,b=b,out=out1);
+    Not(in=out1,out=out);
 }
